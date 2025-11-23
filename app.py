@@ -8,100 +8,179 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- SIDEBAR (Colonne de gauche avec vos infos de contact) ---
+# --- SIDEBAR (Infos, Soft Skills, Loisirs) ---
 with st.sidebar:
-    # Vous pourrez ajouter votre photo ici plus tard avec st.image("photo.jpg")
-    st.title("Rhany El")
-    st.subheader("Data Scientist / Data Analyst")
+    st.title("**Rhany El**")
+    st.subheader("Data Scientist & Data Analyst")
     
-    st.write("📍 Bruxelles")
+    # Coordonnées mises à jour
+    st.write("🌍 **Mobile** (France & International)")
     st.write("📧 abdelrhanywrk@gmail.com")
     st.write("📞 +33 7 52 30 08 01")
-    st.write("🚗 Permis B + Véhicule")
+    st.write("🚗 Permis B + Véhicule personnel")
     
     st.markdown("---")
     
-    # Bouton de téléchargement du CV (Il faudra mettre votre PDF dans le même dossier)
-    # Pour l'instant c'est un bouton inactif pour la démo
+    # Bouton CV (Pensez à bien mettre votre PDF dans le dossier avec ce nom !)
     st.download_button(
-        label="📄 Télécharger mon CV",
-        data="Vous devrez lier votre fichier PDF ici",
+        label="📄 Télécharger mon CV complet",
+        data="Il faudra glisser votre PDF ici",
         file_name="CV_Rhany_El.pdf",
         mime="application/pdf"
     )
 
     st.markdown("---")
-    st.write("**Langues**")
-    st.write("🇬🇧 Anglais (C1)")
-    st.write("🇪🇸 Espagnol (A2)")
+    
+    # Soft Skills (Atouts)
+    st.subheader("🧠 Atouts")
+    st.write("⚡ Capacité d'apprentissage rapide")
+    st.write("🧘 Gestion du stress")
+    st.write("🤝 Adaptabilité & Autonomie")
+    st.write("🎯 Persévérance")
+
+    st.markdown("---")
+
+    # Langues
+    st.subheader("🗣️ Langues")
+    st.write("🇬🇧 Anglais (**C1** - Avancé)")
+    st.write("🇪🇸 Espagnol (**A2** - Intermédiaire)")
+
+    st.markdown("---")
+
+    # Centres d'intérêt
+    st.subheader("🌟 Centres d'intérêt")
+    st.write("🤖 Innovations en IA")
+    st.write("🌍 Voyage (UK, Espagne, Maroc...)")
+    st.write("🏃 Course à pied & Cinéma")
 
 # --- SECTION PRINCIPALE : INTRO ---
-st.title("👋 Bonjour, je suis Rhany")
+st.title("👋 Bonjour, je suis **Rhany El**")
 st.markdown("""
-**Data Scientist & Data Analyst** avec 4 ans d'expérience.  
-Spécialisé dans l'exploitation des données (Python, SQL) et la Dataviz (Power BI) pour la prise de décision stratégique.
+### 🚀 Data Scientist & Data Analyst confirmé
+
+Fort de **4 ans d'expérience** et titulaire d'un **Master Data & IA**, je suis un expert de la chaîne de valeur de la donnée : de l'ingénierie (**ETL, Cloud**) à la **modélisation prédictive (Machine Learning)**.
+
+Mon objectif : **Transformer les données complexes en leviers décisionnels clairs et automatisés** pour optimiser la performance business.
 """)
 
-st.info("🚀 **Disponible immédiatement** pour une mission (CDI, Freelance...) en Data & IA.")
+st.success("✅ **Disponible immédiatement** pour des missions en CDI ou Freelance.")
 
 st.markdown("---")
 
-# --- SECTION COMPÉTENCES (Affichage en colonnes) ---
+# --- SECTION COMPÉTENCES (Détaillée à fond) ---
 st.header("🛠 Compétences Techniques")
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.subheader("💻 Languages & Code")
-    st.write("🐍 **Python**, SQL, R, SAS, VBA")
-    st.write("🌐 HTML, CSS, PHP")
-    st.write("⚙️ Git, GitHub")
+    st.markdown("#### **Data Science & ML**")
+    st.write("🐍 **Python** (Pandas, Scikit-learn)")
+    st.write("🔢 **SQL**, R, SAS, VBA")
+    st.write("📈 Modélisation (Scoring, Régression)")
 
 with col2:
-    st.subheader("📊 Dataviz & BI")
-    st.write("📈 **Power BI**, Tableau, Qlik Sense")
-    st.write("📋 Business Objects (BO)")
-    st.write("🤖 PowerAutomate, PowerApps")
+    st.markdown("#### **BI & Reporting**")
+    st.write("📊 **Power BI** (DAX) & Tableau")
+    st.write("📋 Business Objects (BO), Qlik Sense")
+    st.write("🤖 Automatisation (PowerAutomate/Apps)")
 
 with col3:
-    st.subheader("☁️ Cloud & Data Eng.")
-    st.write("☁️ **Azure Databricks**, Snowflake, GCP")
-    st.write("🔄 ETL: Talend, Oracle Data Integrator")
-    st.write("🔒 Cybersécurité & RGPD")
+    st.markdown("#### **Data Eng & Cloud**")
+    st.write("❄️ **Snowflake**, Azure Databricks, GCP")
+    st.write("🔄 ETL : Talend, Oracle DI, Knime")
+    st.write("⚙️ Architecture de données")
+
+with col4:
+    st.markdown("#### **Méthodologie**")
+    st.write("🔄 **Gestion de Projet : Scrum, Kanban**")
+    st.write("🛠️ Outils : JIRA, Trello, Git/GitHub")
+    st.write("🛡️ Conformité : RGPD, Cybersécurité")
 
 st.markdown("---")
 
-# --- SECTION EXPÉRIENCES (Détails interactifs) ---
-st.header("💼 Expériences Professionnelles")
+# --- SECTION EXPÉRIENCES (Détaillée à fond) ---
+st.header("💼 Parcours Professionnel")
 
 # Expérience 1 : Castorama
-with st.expander("🏠 **Data Scientist / Data Analyst - Castorama** (Sept 2023 - Oct 2025)", expanded=True):
-    st.write("**Contexte :** Mise en place d'un modèle de churn prédictif et transformation data-driven.")
+with st.expander("🛠️ **Data Scientist / Data Analyst - CASTORAMA** (Sept 2023 - Oct 2025)", expanded=True):
     st.markdown("""
-    * **Modélisation :** Développement d'un modèle de scoring client (Python/SQL) pour anticiper l'attrition. [Projet déployé en prod]
-    * **Data Engineering :** Nettoyage et structuration de données multi-sources (Transactions, CRM digital).
-    * **Dataviz :** Conception d'un dashboard Power BI adopté à l'échelle nationale par les directeurs de magasin.
-    * **Stack technique :** Python, SQL, VBA, Power BI.
+    **Contexte :** Projet stratégique de fidélisation client et de transformation Data-Driven.
+    
+    **🎯 Missions & Réalisations :**
+    * **Modélisation Prédictive :** Conception et **déploiement en production** d'un modèle de *Scoring Churn* (Python/SQL) pour identifier les clients à risque.
+    * **Data Engineering :** Mise en place des flux de nettoyage et de structuration de données complexes (transactions magasin + CRM digital).
+    * **Reporting :** Création d'un dashboard Power BI clé en main pour le pilotage de la fidélité.
+    * **Automatisation :** Scripts Python/VBA pour optimiser les campagnes marketing ciblées.
+
+    **🏆 Impact Business :**
+    * ✅ **Adoption nationale** du dashboard Power BI par le réseau de directeurs.
+    * ✅ **Intégration des recommandations** stratégiques directement aux processus CRM.
+    * ✅ **Pilotage précis** des actions de rétention.
+    
+    *Stack : Python, SQL, VBA, Power BI, Azure.*
     """)
 
-# Expérience 2 : Crédit Agricole
-with st.expander("bank **Data Analyst - Crédit Agricole** (Sept 2021 - Sept 2023)"):
-    st.write("**Contexte :** Support à la direction, automatisation des reportings et migration Cloud.")
+# Expérience 2 : Crédit Agricole (Icone "bank" retirée -> remplacée par 🏢)
+with st.expander("🏢 **Data Analyst / Ingénieur BI - CRÉDIT AGRICOLE** (Sept 2021 - Sept 2023)", expanded=True):
     st.markdown("""
-    * **Automatisation :** Création de scripts (VBA, SAS, Power Query) réduisant drastiquement le temps de reporting.
-    * **Migration Cloud :** Migration des données de SAS vers **Snowflake** (réécriture de code SAS en SQL).
-    * **Outils Métier :** Conception d'outils Excel/VBA dynamiques pour les équipes non techniques.
-    * **Analyse :** Études sur le surendettement pour ajuster les stratégies de recouvrement.
+    **Contexte :** Modernisation des systèmes de reporting et migration vers une architecture Cloud.
+    
+    **🎯 Missions & Réalisations :**
+    * **Migration Cloud Majeure :** Pilotage technique de la migration des données de l'environnement **SAS vers Snowflake**, incluant la réécriture complète des scripts de transformation en SQL.
+    * **Automatisation :** **Réduction significative du temps de production** des reportings réglementaires grâce à l'automatisation via VBA, SAS et Power Query.
+    * **Outils Métier :** Création d'interfaces Excel dynamiques et ergonomiques, facilitant l'utilisation des reportings par les équipes non-techniques.
+    * **Analyse :** Réalisation d'études détaillées sur l'endettement client pour **ajuster les stratégies de recouvrement**.
+
+    **🏆 Impact Business :**
+    * ✅ **Fiabilisation** du pilotage des créances consolidées.
+    * ✅ **Gain de temps** sur la production des reportings mensuels.
+    * ✅ **Création d'outils ergonomiques** facilitant la prise de décision en agence.
+
+    *Stack : SAS, SQL, Snowflake, VBA, Excel, Power Query.*
     """)
 
 st.markdown("---")
 
-# --- SECTION FORMATION ---
-st.header("🎓 Diplômes")
-st.write("🎓 **Master Data & IA** - INSA Lille (2023 - 2025)")
-st.write("🎓 **Licence SID (Système d'Information Décisionnelle)** - Université de Lille (2022 - 2023)")
-st.write("🎓 **DUT Statistique et Informatique Décisionnelle** - Université de Lille (2020 - 2022)")
+# --- SECTION FORMATION (Détaillée) ---
+st.header("🎓 Formation Académique")
+
+col_a, col_b = st.columns([1, 3])
+
+with col_a:
+    st.write("📅 **2023 - 2025**")
+with col_b:
+    st.subheader("**Master Data & IA**")
+    st.write("INSA Hauts-de-France (Lille)")
+    st.caption("Axé sur le Big Data (Spark), l'ETL, la modélisation avancée, et la gestion de projet Agile (Scrum/Kanban).")
+
+st.markdown("---")
+
+col_c, col_d = st.columns([1, 3])
+
+with col_c:
+    st.write("📅 **2022 - 2023**")
+with col_d:
+    st.subheader("**Licence SID (Système d'Information Décisionnelle)**")
+    st.write("Université de Lille")
+    st.caption("Approfondissement en analyse de données, statistique appliquée et informatique décisionnelle (R, Python, SQL, SAS).")
+
+st.markdown("---")
+
+col_e, col_f = st.columns([1, 3])
+
+with col_e:
+    st.write("📅 **2020 - 2022**")
+with col_f:
+    st.subheader("**DUT STID (Statistique et Informatique Décisionnelle)**")
+    st.write("Université de Lille")
+    st.caption("Socle solide en statistique, programmation et outils décisionnels.")
+
 
 # --- FOOTER ---
 st.markdown("---")
-st.caption("Développé avec Python & Streamlit par Rhany El.")
+# Centering the footer text
+st.markdown("""
+<div style='text-align: center;'>
+    <p>© 2025 - Portfolio développé par Rhany El avec Python & Streamlit.</p>
+</div>
+""", unsafe_allow_html=True)
