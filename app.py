@@ -3,15 +3,15 @@ from PIL import Image
 
 # --- CONFIGURATION DE LA PAGE ---
 st.set_page_config(
-    page_title="Rhany El - Data Scientist Portfolio",
+    page_title="Rhany El Khayari - Data & AI Professional Portfolio",
     page_icon="📊",
     layout="wide"
 )
 
 # --- SIDEBAR (Infos, Soft Skills, Loisirs) ---
 with st.sidebar:
-    st.title("**Rhany El**")
-    st.subheader("Data Scientist & Data Analyst")
+    st.title("**Rhany El Khayari**")
+    st.subheader("Consultant Data & AI")
     
     # Coordonnées mises à jour
     st.write("🌍 **Mobile** (France & International)")
@@ -54,11 +54,11 @@ with st.sidebar:
     st.write("🏃 Course à pied & Cinéma")
 
 # --- SECTION PRINCIPALE : INTRO ---
-st.title("👋 Bonjour, je suis **Rhany El**")
+st.title("👋 Bonjour, je suis **Rhany El Khayari**")
 st.markdown("""
 ### 🚀 Data Scientist & Data Analyst confirmé
 
-Fort de **4 ans d'expérience** et titulaire d'un **Master Data & IA**, je suis un expert de la chaîne de valeur de la donnée : de l'ingénierie (**ETL, Cloud**) à la **modélisation prédictive (Machine Learning)**.
+Fort de **5 ans d'expérience** et titulaire d'un **Master Data & IA**, je suis un expert de la chaîne de valeur de la donnée : de l'ingénierie (**ETL, Cloud**) à la **modélisation prédictive (Machine Learning)**.
 
 Mon objectif : **Transformer les données complexes en leviers décisionnels clairs et automatisés** pour optimiser la performance business.
 """)
@@ -184,3 +184,4 @@ st.markdown("""
     <p>© 2025 - Portfolio développé par Rhany El avec Python & Streamlit.</p>
 </div>
 """, unsafe_allow_html=True)
+
